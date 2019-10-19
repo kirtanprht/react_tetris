@@ -25,6 +25,7 @@ export const usePlayer = () => {
         return rotatedTetro.reverse();
     }
 
+    //super advanced function
     const playerRotate = (stage, dir) => {
         //create a deep copy, do not want to modify state
         const clonedPlayer = JSON.parse(JSON.stringify(player));
