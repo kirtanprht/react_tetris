@@ -50,12 +50,20 @@ export const TETROMINOS = {
     },
     T: {
         shape: [
-            [0, 'L', 0],
+            [0, 0, 0],
             ['T', 'T', 'T'],
             [0, 'T', 0],
         ],
         color: '132, 61, 198',
     },
+    // T: {
+    //     shape: [
+    //         ['T', 'T', 'T'],
+    //         [0, 'T', 0],
+    //         [0, 0, 0],
+    //     ],
+    //     color: '132, 61, 198',
+    // },
 }
 
 export const randomTetromino = () => {
