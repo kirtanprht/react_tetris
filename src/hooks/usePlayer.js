@@ -2,7 +2,6 @@ import { useState, useCallback } from 'react';
 import { STAGE_WIDTH, checkCollision } from '../components/gameHelpers'
 
 import { TETROMINOS, randomTetromino } from '../components/tetronimos';
-import { clone } from '@babel/types';
 
 export const usePlayer = () => {
     const [player, setPlayer] = useState({

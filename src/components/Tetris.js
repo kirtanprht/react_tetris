@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import Stage from './Stage';
-import Cell from './Cell';
 import StartButton from './StartButton';
 import Display from './Display';
 import {StyledTetris, StyledTetrisWrapper} from './styles/StyledTetris';
@@ -45,9 +44,9 @@ const Tetris = () => {
     const drop = () => {
         //Increase level when player clears 10 rows
         if (rows > (level + 1) * 10) {
-            setLevel(prev => prev +1);
+            setLevel(prev => prev + 1);
             //also increase speed
-            setDropTime(1000/ (level + 1) + 200);
+            setDropTime( 1000 / (level + 1) + 200);
         }
 
         if (!checkCollision(player, stage, {x:0, y:1})) {
@@ -66,7 +65,7 @@ const Tetris = () => {
 
     const keyUp = ({keyCode}) => {
         if (!gameOver) {
-            if (keyCode === 40) {
+            if (keyCode === 40 || keyCode === 83) {
                 console.log("interval on");
                 setDropTime(1000/ (level + 1) + 200);
             }
