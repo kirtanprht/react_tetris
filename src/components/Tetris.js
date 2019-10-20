@@ -81,16 +81,16 @@ const Tetris = () => {
 
     const move = ({ keyCode }) => {
         if (!gameOver) {
-            if (keyCode === 37) {
+            if (keyCode === 37 || keyCode === 65) {
                 movePlayer(-1);
             } 
-            else if (keyCode === 39) {
+            else if (keyCode === 39 || keyCode === 68) {
                 movePlayer(1);
             }
-            else if (keyCode === 40) {
+            else if (keyCode === 40 || keyCode === 83) {
                 dropPlayer();
             } 
-            else if (keyCode === 38) {
+            else if (keyCode === 38 || keyCode === 87) {
                 playerRotate(stage, 1);
             }
         }
