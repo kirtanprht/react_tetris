@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const StyledTetrisWrapper = styled.div`
     width: 100vw;
     height: 100vh;
-    background: url('https://i.imgur.com/JJE9YiY.jpg');
+    background: url('https://i.imgur.com/povmNJN.png');
     background-size: cover;
     overflow: hidden;
 `
