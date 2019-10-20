@@ -108,7 +108,7 @@ const Tetris = () => {
         <StyledTetris>
         <aside>
             {gameOver ? (
-                <Display gameOver={gameOver} text="Game Over" />
+                <Display gameOver={gameOver} text={`Game Over:  ${score}` }/>
             ): (
             <div>
             <Display text={`Score: ${score}`}></Display>
