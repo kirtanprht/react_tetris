@@ -9,7 +9,6 @@ import {usePlayer} from '../hooks/usePlayer';
 import {useStage} from '../hooks/useStage';
 import {useInterval} from '../hooks/useInterval';
 import {useGameStatus} from '../hooks/useGameStatus';
-import Name from './Name';
 const Tetris = () => {
     const [dropTime, setDropTime] = useState(null)
     const [gameOver, setGameOver] = useState(null);
@@ -102,7 +101,7 @@ const Tetris = () => {
     return (
         <StyledTetrisWrapper 
             role="button" 
-            tabIndex="0" 
+            tabIndex="0"
             onKeyDown={e => move(e)} 
             onKeyUp={keyUp}>
         <StyledTetris>
@@ -119,7 +118,6 @@ const Tetris = () => {
             <StartButton callback={startGame} />
         </aside>
         <Stage stage={stage}/>
-        <Name></Name>
         </StyledTetris>
         </StyledTetrisWrapper>
         
