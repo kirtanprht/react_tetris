@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import Stage from './Stage';
 import StartButton from './StartButton';
 import Display from './Display';
+import Audio from './Audio';
 import {StyledTetris, StyledTetrisWrapper} from './styles/StyledTetris';
 import { createStage, checkCollision} from './gameHelpers';
 //Custom hooks
@@ -119,6 +120,7 @@ const Tetris = () => {
         </aside>
         <Stage stage={stage}/>
         </StyledTetris>
+        <Audio/>
         </StyledTetrisWrapper>
         
     )
