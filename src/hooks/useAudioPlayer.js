@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 function useAudioPlayer() {
   const [duration, setDuration] = useState();
   const [curTime, setCurTime] = useState();
-  const [playing, setPlaying] = useState(true);
+  const [playing, setPlaying] = useState(false);
   const [clickedTime, setClickedTime] = useState();
 
   useEffect(() => {

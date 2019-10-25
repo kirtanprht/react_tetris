@@ -5,7 +5,7 @@ export default function Play(props) {
 
   return (
     <button className="player__button" onClick={() => handleClick()}>
-    <StyledPlay>Play</StyledPlay>
+    <StyledPlay>Play Audio</StyledPlay>
     </button>
   );
 }
