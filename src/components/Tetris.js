@@ -119,8 +119,9 @@ const Tetris = () => {
             <StartButton callback={startGame} />
         </aside>
         <Stage stage={stage}/>
-        </StyledTetris>
         <Audio/>
+
+        </StyledTetris>
         </StyledTetrisWrapper>
         
     )

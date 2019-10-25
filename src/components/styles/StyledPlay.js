@@ -1,16 +1,15 @@
 import styled from 'styled-components';
 
-export const StyledAudio = styled.button`
+export const StyledPlay = styled.button`
     box-sizing: border-box;
-    margin: 0 0 20px 0;
+    margin: 0 0 0 0;
     font: Helvetica;
-    padding: 10px;
+    display:flex;
     min-height: 30px;
     width: 100%;
     border: 4px solid grey;
     color: lightgreen;
     background: black;
     font-size: 1rem;
-    outline: beige;
     cursor: pointer;
 `
